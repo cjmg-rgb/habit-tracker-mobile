@@ -1,50 +1,41 @@
-# Welcome to your Expo app 👋
+Habit Tracker App
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+Features
+- Personals
+-- Create, Read, Update, and Delete a Habit
+-- Hourly, Daily, or Weekly reset of Habit 
+-- Consistency or streak counter for completion of Habit
+-- Habit Notifications
 
-## Get started
+- Social
+-- See public habits made by others
+-- Notify others
+-- Can create a group with same habits
 
-1. Install dependencies
 
-   ```bash
-   npm install
-   ```
+Stack
+- Backend
+-- API: 	Express
+-- Database: 	PostgreSQL
+-- ORM:		Prisma
+-- Language:	Typescript
+-- Others:	cors, dotenv, nodemon, bcrypt, jsonwebtoken, express-async-handler, morgan
 
-2. Start the app
+- Frontend
+-- Framework: 	React-Native Expo
+-- api:		axios
+-- state:	zustand
+-- Query:	React Query
+-- Form Val:	zod
+-- navigations:	expo-router
+-- forms:	react-hook-form, 	 @hookform/resolvers
 
-   ```bash
-    npx expo start
-   ```
-
-In the output, you'll find options to open the app in a
-
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
-
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
-
-## Get a fresh project
-
-When you're ready, run:
-
-```bash
-npm run reset-project
-```
-
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
-
-## Learn more
-
-To learn more about developing your project with Expo, look at the following resources:
-
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
-
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+Database Models
+- user
+- profile
+- habit
+- notification
+- group
+- usergroup
+- habitlog
+- userstats
