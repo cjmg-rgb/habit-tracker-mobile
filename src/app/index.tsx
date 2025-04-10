@@ -2,7 +2,6 @@ import { View, Text } from "react-native";
 import React, { useEffect, useState } from "react";
 import { Redirect, useRouter } from "expo-router";
 import { useAuthStore } from "../store/authStore";
-import { getIp } from "../helpers";
 
 export default function index() {
   const [loading, setLoading] = useState(true);
@@ -11,7 +10,7 @@ export default function index() {
 
   useEffect(() => {
     if (!auth && !loading) {
-      router.replace("/login");
+      router.replace("/(auth)");
     }
     setLoading(false);
   }, [loading]);

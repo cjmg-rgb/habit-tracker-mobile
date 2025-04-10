@@ -1,6 +1,6 @@
 import { View, Text } from "react-native";
 import React from "react";
-import styles from "@/src/styles/Login.style";
+import styles from "@/src/styles/auth/Header.style";
 import { Image } from "react-native";
 import themes from "@/src/constants/themes";
 

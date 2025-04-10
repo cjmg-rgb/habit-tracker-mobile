@@ -4,6 +4,8 @@ import { SplashScreen, Stack } from "expo-router";
 import { SafeAreaProvider, SafeAreaView } from "react-native-safe-area-context";
 import { QueryClientProvider, QueryClient } from "@tanstack/react-query";
 import { useFonts } from "expo-font";
+import Toast from "react-native-toast-message";
+import themes from "../constants/themes";
 
 SplashScreen.preventAutoHideAsync();
 
@@ -33,6 +35,7 @@ const RootLayout = () => {
         <SafeAreaView
           style={{
             flex: 1,
+            backgroundColor: themes.COLORS.background,
           }}
         >
           <Stack
@@ -40,6 +43,7 @@ const RootLayout = () => {
               headerShown: false,
             }}
           />
+          <Toast />
           <StatusBar />
         </SafeAreaView>
       </SafeAreaProvider>
